@@ -36,6 +36,9 @@ TARGET_BOOTLOADER_BOARD_NAME := hercules
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules
 
+# NFC
+BOARD_HAVE_NFC := true
+
 # Kernel
 TARGET_KERNEL_CONFIG        := cyanogenmod_hercules_defconfig
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
