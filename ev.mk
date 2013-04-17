@@ -2,11 +2,8 @@
 $(call inherit-product, device/samsung/hercules/device.mk)
 
 # Inherit some common evervolv stuff.
-$(call inherit-product, vendor/cm/config/gsm.mk)
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/ev/config/gsm.mk)
+$(call inherit-product, vendor/ev/config/common_full_phone.mk)
 
 #
 # Setup device specific product configuration.
@@ -31,7 +28,5 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Copy compatible prebuilt files
 PRODUCT_COPY_FILES +=  \
     vendor/ev/prebuilt/wvga/media/bootanimation.zip:system/media/bootanimation.zip
-
-TARGET_BOOTANIMATION_NAME := 480
 
 
