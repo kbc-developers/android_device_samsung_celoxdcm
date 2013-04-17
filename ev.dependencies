@@ -18,6 +18,12 @@
     "repository": "android_kernel_samsung_msm8660-common",
     "target_path": "kernel/samsung/msm8660-common"
     "dep_type": "kernel"
-  }
+  },
+  {
+		"repository": "android_hardware_qcom_audio-caf",
+		"target_path": "hardware/qcom/audio-caf",
+		"branch": "jellybean",
+		"dep_type": "hardware"
+	}
 ]
 
