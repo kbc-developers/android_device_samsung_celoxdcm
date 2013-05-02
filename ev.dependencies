@@ -20,7 +20,7 @@
   {
     "repository": "android_kernel_samsung_msm8660",
     "target_path": "kernel/samsung/msm8660",
-    "branch": "next-3.0",
+    "branch": "jellybean",
     "dep_type": "kernel"
   },
   {
