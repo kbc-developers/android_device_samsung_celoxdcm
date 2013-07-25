@@ -2,13 +2,11 @@
   {
     "repository": "android_device_samsung_msm8660-common",
     "target_path": "device/samsung/msm8660-common",
-    "branch": "jellybean",
     "dep_type": "device"
   },
   {
     "repository": "android_device_samsung_celox-common",
     "target_path": "device/samsung/celox-common",
-    "branch": "jellybean",
     "dep_type": "device"
   }
 ]
