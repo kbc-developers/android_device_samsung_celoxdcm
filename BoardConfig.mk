@@ -43,6 +43,9 @@ BOARD_HAVE_NFC := true
 TARGET_KERNEL_CONFIG        := evervolv_hercules_defconfig
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660
 
+# Assert minimum baseband version
+TARGET_BOARD_INFO_FILE ?= device/samsung/hercules/board-info.txt
+
 # cat /proc/emmc
 #dev:        size     erasesize name
 #mmcblk0p22: 00fffc00 00000200 "recovery"
