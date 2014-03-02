@@ -13,13 +13,13 @@
   },
   {
     "remote":       "github",
-    "repository":   "bryan2894/android_device_samsung_msm8660-common",
+    "repository":   "AOSPA-legacy/android_device_samsung_msm8660-common",
     "target_path":  "device/samsung/msm8660-common",
     "revision":     "kitkat"
   },
   {
     "remote":       "github",
-    "repository":   "bryan2894/android_device_samsung_celox-common",
+    "repository":   "AOSPA-legacy/android_device_samsung_celox-common",
     "target_path":  "device/samsung/celox-common",
     "revision":     "kitkat"
   },
@@ -90,9 +90,33 @@
     "revision":     "cm-11.0"
   },
   {
-    "remote":       "github",
-    "repository":   "ParanoidAndroid/HALO",
-    "target_path":  "packages/apps/HALO",
-    "revision":     "jb43"
+    "remote":       "cm",
+    "repository":   "CyanogenMod/android_bootable_recovery",
+    "target_path":  "bootable/recovery",
+    "revision":     "cm-11.0"
+  },
+  {
+    "remote":       "cm",
+    "repository":   "CyanogenMod/android_external_pigz",
+    "target_path":  "external/pigz",
+    "revision":     "cm-11.0"
+  },
+  {
+    "remote":       "cm",
+    "repository":   "CyanogenMod/android_external_fsck_msdos",
+    "target_path":  "external/fsck_msdos",
+    "revision":     "cm-11.0"
+  },
+  {
+    "remote":       "cm",
+    "repository":   "CyanogenMod/android_external_yaffs2",
+    "target_path":  "external/yaffs2",
+    "revision":     "cm-11.0"
+  },
+  {
+    "remote":       "cm",
+    "repository":   "CyanogenMod/Superuser",
+    "target_path":  "external/koush/Superuser",
+    "revision":     "cm-11.0"
   }
 ]
