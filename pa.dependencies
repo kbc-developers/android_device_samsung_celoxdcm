@@ -85,12 +85,6 @@
   },
   {
     "remote":       "cm",
-    "repository":   "CyanogenMod/android_packages_apps_CMFileManager",
-    "target_path":  "packages/apps/CMFileManager",
-    "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
     "repository":   "CyanogenMod/android_bootable_recovery",
     "target_path":  "bootable/recovery",
     "revision":     "cm-11.0"
