@@ -82,35 +82,5 @@
     "repository":   "CyanogenMod/android_hardware_samsung",
     "target_path":  "hardware/samsung",
     "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
-    "repository":   "CyanogenMod/android_bootable_recovery",
-    "target_path":  "bootable/recovery",
-    "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
-    "repository":   "CyanogenMod/android_external_pigz",
-    "target_path":  "external/pigz",
-    "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
-    "repository":   "CyanogenMod/android_external_fsck_msdos",
-    "target_path":  "external/fsck_msdos",
-    "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
-    "repository":   "CyanogenMod/android_external_yaffs2",
-    "target_path":  "external/yaffs2",
-    "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
-    "repository":   "CyanogenMod/Superuser",
-    "target_path":  "external/koush/Superuser",
-    "revision":     "cm-11.0"
   }
 ]
