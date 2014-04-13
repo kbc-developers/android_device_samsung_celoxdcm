@@ -49,8 +49,8 @@
   },
   {
     "remote":       "cm",
-    "repository":   "CyanogenMod/android_hardware_qcom_media",
-    "target_path":  "hardware/qcom/media",
+    "repository":   "CyanogenMod/android_hardware_qcom_media-caf",
+    "target_path":  "hardware/qcom/media-caf",
     "revision":     "cm-11.0"
   },
   {
