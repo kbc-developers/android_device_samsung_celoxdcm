@@ -37,48 +37,6 @@
   },
   {
     "remote":       "cm",
-    "repository":   "CyanogenMod/android_hardware_qcom_display-caf",
-    "target_path":  "hardware/qcom/display-caf",
-    "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
-    "repository":   "CyanogenMod/android_hardware_qcom_audio-caf",
-    "target_path":  "hardware/qcom/audio-caf",
-    "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
-    "repository":   "CyanogenMod/android_hardware_qcom_media-caf",
-    "target_path":  "hardware/qcom/media-caf",
-    "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
-    "repository":   "CyanogenMod/android_hardware_qcom_power",
-    "target_path":  "hardware/qcom/power",
-    "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
-    "repository":   "CyanogenMod/android_hardware_qcom_wlan",
-    "target_path":  "hardware/qcom/wlan",
-    "revision":     "cm-11.0"
-  },
-  {
-    "account":      "cm",
-    "repository":   "CyanogenMod/android_hardware_qcom_gps",
-    "target_path":  "hardware/qcom/gps",
-    "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
-    "repository":   "CyanogenMod/android_hardware_qcom_bt",
-    "target_path":  "hardware/qcom/bt",
-    "revision":     "cm-11.0"
-  },
-  {
-    "remote":       "cm",
     "repository":   "CyanogenMod/android_hardware_samsung",
     "target_path":  "hardware/samsung",
     "revision":     "cm-11.0"
