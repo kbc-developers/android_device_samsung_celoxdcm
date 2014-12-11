@@ -27,6 +27,10 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/hercules/overlay
 PRODUCT_COPY_FILES += \
     device/samsung/hercules/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
 
+# TWRP
+$(shell mkdir -p out/target/product/hercules/recovery/root/vendor/firmware/keymaster)
+$(shell mkdir -p out/target/product/hercules/recovery/root/vendor/lib/hw)
+
 # BT firmware
 PRODUCT_COPY_FILES += \
     device/samsung/hercules/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
