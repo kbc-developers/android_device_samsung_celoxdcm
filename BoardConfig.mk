@@ -41,7 +41,6 @@ BOARD_HAVE_NFC := true
 
 # Kernel
 TARGET_KERNEL_CONFIG        := evervolv_hercules_defconfig
-TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660
 
 # Assert minimum baseband version
 TARGET_BOARD_INFO_FILE ?= device/samsung/hercules/board-info.txt
