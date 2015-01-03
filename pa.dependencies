@@ -1,44 +1,68 @@
 [
   {
-    "remote":       "blobs",
-    "repository":   "proprietary_vendor_samsung",
+    "remote":       "github",
+    "repository":   "sultanxda/android_vendor_samsung_celox",
     "target_path":  "vendor/samsung",
-    "revision":     "cm-11.0"
+    "revision":     "cm-12.0"
   },
   {
     "remote":       "github",
     "repository":   "AOSPA-legacy/android_device_samsung_qcom-common",
     "target_path":  "device/samsung/qcom-common",
-    "revision":     "kitkat"
+    "revision":     "lollipop"
   },
   {
     "remote":       "github",
     "repository":   "AOSPA-legacy/android_device_samsung_msm8660-common",
     "target_path":  "device/samsung/msm8660-common",
-    "revision":     "kitkat"
+    "revision":     "lollipop"
   },
   {
     "remote":       "github",
     "repository":   "AOSPA-legacy/android_device_samsung_celox-common",
     "target_path":  "device/samsung/celox-common",
-    "revision":     "kitkat"
+    "revision":     "lollipop"
   },
   {
     "remote":       "github",
     "repository":   "bryan2894/android_kernel_samsung_msm8660-common",
     "target_path":  "kernel/samsung/msm8660-common",
-    "revision":     "kitkat"
-  },
-  {
-    "remote":       "cm",
-    "repository":   "CyanogenMod/android_packages_apps_SamsungServiceMode",
-    "target_path":  "packages/apps/SamsungServiceMode",
-    "revision":     "cm-11.0"
+    "revision":     "lollipop"
   },
   {
     "remote":       "cm",
     "repository":   "CyanogenMod/android_hardware_samsung",
     "target_path":  "hardware/samsung",
-    "revision":     "cm-11.0"
+    "revision":     "cm-12.0"
+  },
+  {
+    "remote":       "github",
+    "repository":   "Evervolv/android_hardware_qcom_audio-caf",
+    "target_path":  "hardware/qcom/audio-caf/msm8660",
+    "revision":     "lollipop-8960"
+  },
+  {
+    "remote":       "github",
+    "repository":   "Evervolv/android_hardware_qcom_display-caf",
+    "target_path":  "hardware/qcom/display-caf/msm8660",
+    "revision":     "lollipop-8960"
+  },
+  {
+    "remote":       "github",
+    "repository":   "Evervolv/android_hardware_qcom_media-caf",
+    "target_path":  "hardware/qcom/media-caf/msm8660",
+    "revision":     "lollipop-8960"
+  },
+  {
+    "remote":       "github",
+    "repository":   "bryan2894/android_system_vold",
+    "target_path":  "system/vold",
+    "revision":     "cm-12.0"
+  },
+  {
+    "remote":       "aosp",
+    "repository":   "platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7",
+    "target_path":  "prebuilts/gcc/linux-x86/arm/arm-eabi-4.7",
+    "revision":     "refs/tags/android-4.4.4_r2.0.1"
   }
 ]
