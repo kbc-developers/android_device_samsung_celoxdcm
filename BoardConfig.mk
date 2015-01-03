@@ -23,7 +23,7 @@ TARGET_BOARD_INFO_FILE ?= device/samsung/skyrocket/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := SGH-I727,skyrocket
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_skyrocket_defconfig
+TARGET_KERNEL_CONFIG := skyrocket_defconfig
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
