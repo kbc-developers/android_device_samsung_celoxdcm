@@ -54,15 +54,9 @@
     "revision":     "lollipop-8960"
   },
   {
-    "remote":       "github",
-    "repository":   "bryan2894/android_system_vold",
-    "target_path":  "system/vold",
+    "remote":       "cm",
+    "repository":   "CyanogenMod/android_frameworks_ex",
+    "target_path":  "frameworks/ex",
     "revision":     "cm-12.0"
-  },
-  {
-    "remote":       "aosp",
-    "repository":   "platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7",
-    "target_path":  "prebuilts/gcc/linux-x86/arm/arm-eabi-4.7",
-    "revision":     "refs/tags/android-4.4.4_r2.0.1"
   }
 ]
