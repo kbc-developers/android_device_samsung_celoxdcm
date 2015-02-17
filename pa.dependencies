@@ -37,21 +37,21 @@
   },
   {
     "remote":       "github",
-    "repository":   "Evervolv/android_hardware_qcom_audio-caf",
+    "repository":   "bryan2894/android_hardware_qcom_audio",
     "target_path":  "hardware/qcom/audio-caf/msm8660",
-    "revision":     "lollipop-8960"
+    "revision":     "cm-12.0-caf-8660"
   },
   {
     "remote":       "github",
-    "repository":   "Evervolv/android_hardware_qcom_display-caf",
+    "repository":   "bryan2894/android_hardware_qcom_display",
     "target_path":  "hardware/qcom/display-caf/msm8660",
-    "revision":     "lollipop-8960"
+    "revision":     "cm-12.0-caf-8660"
   },
   {
     "remote":       "github",
-    "repository":   "Evervolv/android_hardware_qcom_media-caf",
+    "repository":   "bryan2894/android_hardware_qcom_media",
     "target_path":  "hardware/qcom/media-caf/msm8660",
-    "revision":     "lollipop-8960"
+    "revision":     "cm-12.0-caf-8660"
   },
   {
     "remote":       "cm",
