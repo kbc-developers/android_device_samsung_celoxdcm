@@ -3,60 +3,60 @@
     "remote":       "github",
     "repository":   "sultanxda/android_vendor_samsung_celox",
     "target_path":  "vendor/samsung",
-    "revision":     "cm-12.0"
+    "revision":     "cm-12.1"
   },
   {
     "remote":       "github",
     "repository":   "AOSPA-legacy/android_device_samsung_qcom-common",
     "target_path":  "device/samsung/qcom-common",
-    "revision":     "lollipop"
+    "revision":     "lollipop-mr1"
   },
   {
     "remote":       "github",
     "repository":   "AOSPA-legacy/android_device_samsung_msm8660-common",
     "target_path":  "device/samsung/msm8660-common",
-    "revision":     "lollipop"
+    "revision":     "lollipop-mr1"
   },
   {
     "remote":       "github",
     "repository":   "AOSPA-legacy/android_device_samsung_celox-common",
     "target_path":  "device/samsung/celox-common",
-    "revision":     "lollipop"
+    "revision":     "lollipop-mr1"
   },
   {
     "remote":       "github",
     "repository":   "bryan2894/android_kernel_samsung_msm8660-common",
     "target_path":  "kernel/samsung/msm8660-common",
-    "revision":     "lollipop"
+    "revision":     "lollipop-mr1"
   },
   {
-    "remote":       "cm",
+    "remote":       "github",
     "repository":   "CyanogenMod/android_hardware_samsung",
     "target_path":  "hardware/samsung",
-    "revision":     "cm-12.0"
+    "revision":     "cm-12.1"
   },
   {
     "remote":       "github",
     "repository":   "bryan2894/android_hardware_qcom_audio",
     "target_path":  "hardware/qcom/audio-caf/msm8660",
-    "revision":     "cm-12.0-caf-8660"
+    "revision":     "cm-12.1-caf-8660"
   },
   {
     "remote":       "github",
     "repository":   "bryan2894/android_hardware_qcom_display",
     "target_path":  "hardware/qcom/display-caf/msm8660",
-    "revision":     "cm-12.0-caf-8660"
+    "revision":     "cm-12.1-caf-8660"
   },
   {
     "remote":       "github",
     "repository":   "bryan2894/android_hardware_qcom_media",
     "target_path":  "hardware/qcom/media-caf/msm8660",
-    "revision":     "cm-12.0-caf-8660"
+    "revision":     "cm-12.1-caf-8660"
   },
   {
-    "remote":       "cm",
+    "remote":       "github",
     "repository":   "CyanogenMod/android_frameworks_ex",
     "target_path":  "frameworks/ex",
-    "revision":     "cm-12.0"
+    "revision":     "cm-12.1"
   }
 ]
