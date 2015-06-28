@@ -1,25 +1,25 @@
 [
   {
     "remote":       "github",
-    "repository":   "sultanxda/android_vendor_samsung_celox",
+    "repository":   "bryan2894/proprietary_vendor_samsung",
     "target_path":  "vendor/samsung",
     "revision":     "cm-12.1"
   },
   {
     "remote":       "github",
-    "repository":   "AOSPA-legacy/android_device_samsung_qcom-common",
+    "repository":   "AOSPA-L/android_device_samsung_qcom-common",
     "target_path":  "device/samsung/qcom-common",
     "revision":     "lollipop-mr1"
   },
   {
     "remote":       "github",
-    "repository":   "AOSPA-legacy/android_device_samsung_msm8660-common",
+    "repository":   "AOSPA-L/android_device_samsung_msm8660-common",
     "target_path":  "device/samsung/msm8660-common",
     "revision":     "lollipop-mr1"
   },
   {
     "remote":       "github",
-    "repository":   "AOSPA-legacy/android_device_samsung_celox-common",
+    "repository":   "AOSPA-L/android_device_samsung_celox-common",
     "target_path":  "device/samsung/celox-common",
     "revision":     "lollipop-mr1"
   },
