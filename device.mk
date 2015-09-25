@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
 # Get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/hercules/hercules-vendor.mk)
 
@@ -24,12 +21,8 @@ $(call inherit-product-if-exists, vendor/samsung/hercules/hercules-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc
-
-# TWRP
-$(shell mkdir -p out/target/product/hercules/recovery/root/vendor/firmware/keymaster)
-$(shell mkdir -p out/target/product/hercules/recovery/root/vendor/lib/hw)
+PRODUCT_PACKAGES += \
+    init.qcom.usb.rc
 
 # Bluetooth
 PRODUCT_COPY_FILES += \

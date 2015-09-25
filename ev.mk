@@ -19,14 +19,14 @@ $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/apns.mk)
 # Product makefile
 $(call inherit-product, device/samsung/hercules/device.mk)
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Inherit some common evervolv stuff.
 $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/common_full_phone.mk)
 
 # Pull all dictionaries
 $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/dictionaries/intl.mk)
-
-# Bootanimation
-BOOT_ANIMATION_SIZE := wvga
 
 #
 # Setup device specific product configuration.
