@@ -17,5 +17,5 @@
  -->
 
 <resources>
-    <string name="device_prop_override">hercules</string>
+    <string name="device_prop_override">celoxdcm</string>
 </resources>

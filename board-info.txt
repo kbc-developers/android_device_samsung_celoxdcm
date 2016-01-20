@@ -1,2 +1,1 @@
-require version-baseband=T989:UVMC6|T989D:TLMC4
-
+require version-baseband=03D:OMMP5

@@ -17,7 +17,7 @@
 $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/apns.mk)
 
 # Product makefile
-$(call inherit-product, device/samsung/hercules/device.mk)
+$(call inherit-product, device/samsung/celoxdcm/device.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -31,16 +31,16 @@ $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/dictionaries/intl.mk)
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := ev_hercules
-PRODUCT_DEVICE := hercules
+PRODUCT_NAME := ev_celoxdcm
+PRODUCT_DEVICE := celoxdcm
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SAMSUNG-SGH-T989
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-T989 TARGET_DEVICE=SGH-T989 BUILD_FINGERPRINT="samsung/SGH-T989/SGH-T989:4.4/KRT16M/T989UVMC6:user/release-keys" PRIVATE_BUILD_DESC="SGH-T989-user 4.4 KRT16M UVMC6 release-keys"
+PRODUCT_MODEL := SAMSUNG-SC-03D
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SC-03D TARGET_DEVICE=SC-03D BUILD_FINGERPRINT="samsung/SC-03D/SC-03D:5.1.1/LMY47I/OMPP5:user/release-keys" PRIVATE_BUILD_DESC="SC-03D-user 5.1.1 LMY47I OMMP5 release-keys"
 
 # Set up the product codename, build version & MOTD.
 PRODUCT_CODENAME := potens
 
-PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your T-Mobile Galaxy S II\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
+PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your DoCoMo Galaxy S II\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
 
 
