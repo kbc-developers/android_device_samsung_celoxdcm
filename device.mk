@@ -15,7 +15,7 @@
 #
 
 # Get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/skyrocket/skyrocket-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/celox/celox-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay

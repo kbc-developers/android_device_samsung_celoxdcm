@@ -16,14 +16,20 @@
 -include device/samsung/celox-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/skyrocket/BoardConfigVendor.mk
+-include vendor/samsung/celox/BoardConfigVendor.mk
 
 # Assert
-TARGET_BOARD_INFO_FILE ?= device/samsung/skyrocket/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := SGH-I727,skyrocket
+TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules,SGH-I727,skyrocket
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/celox/bluetooth
+
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_celox
+TARGET_UNIFIED_DEVICE := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := skyrocket_defconfig
+TARGET_KERNEL_CONFIG := celox_defconfig
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -33,6 +39,3 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16776192
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2149580800
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 20044333056
 TARGET_USERIMAGES_USE_EXT4 := true
-
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/skyrocket/bluetooth
