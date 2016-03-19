@@ -54,5 +54,8 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/celox/releasetools
+
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/celox/sepolicy
