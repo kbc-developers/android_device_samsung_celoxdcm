@@ -14,25 +14,19 @@
 # limitations under the License.
 #
 import common
-import struct
+import os
+import sys
+
+# Import Common releasetools
+LOCAL_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+COMMON_RELEASETOOLS_DIR = os.path.abspath(os.path.join(LOCAL_DIR, '../../../device/samsung/msm8660-common/releasetools'))
+
+# Add releasetools directory to python path
+sys.path.append(COMMON_RELEASETOOLS_DIR)
+
+from releasetools import *
 
 """Custom OTA commands for celox devices"""
-
-def FullOTA_Assertions(info):
-	info.script.AppendExtra("ifelse(!is_mounted(\"/data\"), run_program(\"/sbin/busybox\", \"mount\", \"/data\"));")
-	info.script.AppendExtra("ifelse(!is_mounted(\"/system\"), run_program(\"/sbin/busybox\", \"mount\", \"/system\"));")
-	info.script.AppendExtra(
-		('package_extract_file("install/bin/partitioncheck.sh", "/tmp/partitioncheck.sh");\n'
-		'set_metadata("/tmp/partitioncheck.sh", "uid", 0, "gid", 0, "mode", 0777);'))
-	info.script.AppendExtra('assert(run_program("/tmp/partitioncheck.sh") == 0);')
-
-def FullOTA_PostValidate(info):
-	# run e2fsck
-	info.script.AppendExtra('run_program("/sbin/e2fsck", "-fy", "/dev/block/mmcblk0p25");');
-	# resize2fs: run and delete
-	info.script.AppendExtra('run_program("/tmp/install/bin/resize2fs_static", "/dev/block/mmcblk0p25");');
-	# run e2fsck
-	info.script.AppendExtra('run_program("/sbin/e2fsck", "-fy", "/dev/block/mmcblk0p25");');
 
 def FullOTA_InstallEnd(info):
 	info.script.Mount("/system")
