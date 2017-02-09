@@ -20,7 +20,7 @@
 -include vendor/samsung/celox/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules,SGH-I727,skyrocket
+TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules,SGH-I727,skyrocket,SC-03D,celoxdcm
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/celox/bluetooth
@@ -37,7 +37,7 @@ BOARD_KERNEL_BASE := 0x40400000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom usb_id_pin_rework=true no_console_suspend=true
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01400000
-TARGET_KERNEL_CONFIG := celox_defconfig
+TARGET_KERNEL_CONFIG := celoxdcm_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8660-common
 
 # Partitions
