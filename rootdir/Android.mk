@@ -1,4 +1,4 @@
-ifeq ($(TARGET_DEVICE),celox)
+ifeq ($(TARGET_DEVICE),celoxdcm)
 
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
