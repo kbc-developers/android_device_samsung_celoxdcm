@@ -17,20 +17,16 @@
 -include device/samsung/msm8660-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/celox/BoardConfigVendor.mk
+-include vendor/samsung/celoxdcm/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SGH-T989,hercules,SGH-I727,skyrocket,SC-03D,celoxdcm
+TARGET_OTA_ASSERT_DEVICE := SC-03D,celoxdcm
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/celox/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/celoxdcm/bluetooth
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8660_SURF
-
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_celox
-TARGET_UNIFIED_DEVICE := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x40400000
@@ -44,6 +40,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01400000
 TARGET_KERNEL_CONFIG := celoxdcm_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8660-common
+TARGET_OTA_ASSERT_DEVICE := SC-03D,celoxdcm
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -59,11 +56,11 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 TARGET_USERIMAGES_USE_EXT4 := true
 ifeq ($(TWRP_RECOVERY),true)
-TARGET_RECOVERY_FSTAB := device/samsung/celox/recovery/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/celoxdcm/recovery/twrp.fstab
 endif
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/samsung/celox/sepolicy
+BOARD_SEPOLICY_DIRS += device/samsung/celoxdcm/sepolicy
 
 # TWRP
 DEVICE_RESOLUTION := 480x800

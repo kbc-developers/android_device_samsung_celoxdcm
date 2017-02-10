@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/celox/celox-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/celoxdcm/celoxdcm-vendor.mk)
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
