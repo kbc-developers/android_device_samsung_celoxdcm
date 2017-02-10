@@ -62,9 +62,6 @@ ifeq ($(TWRP_RECOVERY),true)
 TARGET_RECOVERY_FSTAB := device/samsung/celox/recovery/twrp.fstab
 endif
 
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/celox/releasetools
-
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/celox/sepolicy
 
