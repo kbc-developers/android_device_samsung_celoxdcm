@@ -34,7 +34,12 @@ TARGET_UNIFIED_DEVICE := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x40400000
+TWRP_RECOVERY:= false
+ifeq ($(TWRP_RECOVERY),true)
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom usb_id_pin_rework=true no_console_suspend=true androidboot.selinux=permissive
+else
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom usb_id_pin_rework=true no_console_suspend=true
+endif
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01400000
 TARGET_KERNEL_CONFIG := celoxdcm_defconfig
@@ -53,9 +58,17 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 20044316672
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 TARGET_USERIMAGES_USE_EXT4 := true
+ifeq ($(TWRP_RECOVERY),true)
+TARGET_RECOVERY_FSTAB := device/samsung/celox/recovery/twrp.fstab
+endif
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/celox/releasetools
 
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/celox/sepolicy
+
+# TWRP
+DEVICE_RESOLUTION := 480x800
+TW_THEME := portrait_mdpi
+TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.196609/leds/lcd-backlight/brightness
