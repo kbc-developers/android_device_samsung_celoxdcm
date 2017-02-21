@@ -60,5 +60,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.mode=endfire \
     persist.audio.vr.enable=false
 
+# TWRP Recovery
+PRODUCT_PACKAGES += \
+    postrecoveryboot.sh \
+    twrp.fstab
+
 # common msm8660
 $(call inherit-product, device/samsung/msm8660-common/msm8660.mk)
