@@ -56,6 +56,8 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 TARGET_USERIMAGES_USE_EXT4 := true
 ifeq ($(TWRP_RECOVERY),true)
 TARGET_RECOVERY_FSTAB := device/samsung/celoxdcm/recovery/twrp.fstab
+else
+TARGET_RECOVERY_FSTAB := device/samsung/celoxdcm/rootdir/etc/fstab.qcom
 endif
 
 # SELinux
